@@ -67,3 +67,26 @@ puts("test2")
 =end
 
 puts("test3")
+
+#if文
+a = 5
+
+if a >= 10 then
+	puts("bigger")
+elsif a < 3 then
+	puts("smaller")
+end
+
+#while文
+i = 0
+while i < 5 do 
+	puts(i)
+	i = i + 1
+end
+
+#times 回数が決まっているときに使用
+10.times do
+
+	puts("hogehoge")
+
+end
