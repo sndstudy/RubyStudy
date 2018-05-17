@@ -6,6 +6,8 @@
 begin
 	#ゼロ除算を発生させている
 	a = 3/0
+
+	puts("error")
 	
 rescue Exception => e
 	
@@ -17,5 +19,8 @@ rescue Exception => e
 
 	#例外が発生した箇所に関する情報
 	p e.backtrace
+ensure
+	#後処理
+	puts("ensure")
 
 end
